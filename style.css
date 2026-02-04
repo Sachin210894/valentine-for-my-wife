@@ -72,3 +72,15 @@ button:hover {
   margin-top: 25px;
   font-size: 1.4em;
 }
+#slide {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;      /* keeps image proportion */
+  border-radius: 50%;     /* makes it round */
+  border: 4px solid #ff4d6d; /* optional romantic border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+#slide:hover {
+  transform: scale(1.05);
+}
