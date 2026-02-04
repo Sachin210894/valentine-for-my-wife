@@ -19,8 +19,13 @@ yesBtn1.addEventListener("click", () => {
 });
 
 setInterval(() => {
-  index = (index + 1) % photos.length;
-  slide.src = photos[index];
+  slide.style.opacity = 0;
+
+  setTimeout(() => {
+    index = (index + 1) % images.length;
+    slide.src = images[index];
+    slide.style.opacity = 1;
+  }, 500);
 }, 3000);
 
 const yesBtn = document.getElementById("yesBtn");
