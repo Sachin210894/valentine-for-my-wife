@@ -2,41 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tanuu ❤️ My Valentine</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <audio id="bgMusic" loop>
-    <source src="music/love.mp3" type="audio/mpeg">
-  </audio>
+<audio id="bgMusic" loop>
+  <source src="music/love.mp3" type="audio/mpeg">
+</audio>
 
-  <div class="container">
-    <h1>Tanuu ❤️</h1>
+<div class="container">
 
-    <p class="message">
-      From the moment you came into my life,<br>
-      everything felt warmer, softer, brighter.<br><br>
-      You are my calm, my strength, my home.<br>
-      Every heartbeat whispers your name.
-    </p>
+  <h1>Tanuu ❤️</h1>
 
-    <div class="slideshow">
-      <div class="image-wrapper">
-        <img id="slide" src="./photos/photo1.jpg" alt="Our memories">
-      </div>
-    </div>
+  <p class="message">
+    From the moment you came into my life,<br>
+    everything felt warmer, softer, brighter.<br><br>
+    You are my calm, my strength, my home.
+  </p>
 
-    <h2>Will you be my Valentine?</h2>
-
-    <div class="buttons">
-      <button id="yesBtn">Yes, always 💕</button>
-      <button id="noBtn">No 🙈</button>
-    </div>
-
-    <p id="response"></p>
+  <!-- Slideshow -->
+  <div class="slideshow pulse">
+    <div class="ring"></div>
+    <img id="slide" src="photos/photo1.jpg" alt="Memories">
   </div>
 
-  <script src="script.js"></script>
+  <h2>Will you be my Valentine?</h2>
+
+  <div class="buttons">
+    <button id="yesBtn">Yes, always 💕</button>
+    <button id="noBtn">No 🙈</button>
+  </div>
+
+  <p id="response"></p>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
