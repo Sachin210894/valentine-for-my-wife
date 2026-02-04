@@ -6,6 +6,18 @@ const photos = [
 let index = 0;
 const slide = document.getElementById("slide");
 
+const music = document.getElementById("bgMusic");
+const yesBtn1 = document.getElementById("yesBtn");
+
+yesBtn1.addEventListener("click", () => {
+  music.play().catch(err => {
+    console.log("Autoplay blocked:", err);
+  });
+
+  document.getElementById("response").innerText =
+    "Yayyy! ❤️ You made my heart the happiest!";
+});
+
 setInterval(() => {
   index = (index + 1) % photos.length;
   slide.src = photos[index];
